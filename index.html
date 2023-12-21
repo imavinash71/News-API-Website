@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC News | Global News</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="navbar-container" id="navbarContainer">
+            <a href="#Newslogo" onclick="reload()">
+                <img src="news3.png" alt="logoIMage" id="logoImage">
+                <span>ABC News</span>
+            </a>
+            <div class="nav-links-div">
+                <ul class="nav-links">
+                    <li class="nav-links-li" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="nav-links-li" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="nav-links-li" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul> 
+            </div>
+            <div class="search-bar" id="searchBar">
+                <input type="text" name="search" id="searchInput" placeholder="Enter your query here...">
+                <button class="search-btn" id="searchBtn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="main-container" id="mainContainer">
+            
+           
+           
+        </div>
+    </main>
+
+    <template id="templateContainer">
+        <div class="template-container" >
+
+            <div class="cards">
+                <div class="card-img">
+                    <img src="https://placehold.co/600x400" alt="" id="cardImage">
+                </div>
+                <div class="card-content">
+                    <h3 id="title">Title is here</h3>
+                    <h6 id="source">Published data here 12/12/2023</h6>
+                    <p id="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut odio, suscipit saepe vitae ex repudiandae dignissimos doloremque rem minima, optio accusamus exercitationem distinctio totam corporis ea explicabo quod, dolore perferendis aperiam itaque! Quaerat, similique laborum.</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

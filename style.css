@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300&display=swap');
+/* font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --text-color:#666153;
+    --logo-color:#7a456e;
+    --background-color:#735478;
+
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+.navbar-container{
+    max-width: 1260px;
+    display: flex;
+    margin: auto;
+    /* background-color: var(--background-color); */
+    justify-content: space-between;
+    align-items: center; 
+}
+nav{
+  background-color: rgb(133, 150, 164);
+   box-shadow: 0 0 8px rgb(165, 173, 180);
+   z-index: 99; 
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+    
+}
+a{
+    display: flex;
+    align-items: center;
+    color: #595500;
+    font-size: 25px;
+    font-weight: bold;
+}
+#logoImage{
+    width: 50px;
+}
+.nav-links{
+    display: flex;
+    gap: 35px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-links-li:hover{
+    color: blue;
+    background-color: white;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 4px;
+   
+}
+
+#searchInput{
+    width: 200px;
+    height: 25px;
+    outline: none;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    /* padding: 15px; */
+    margin: 10px;
+}
+#searchBtn{
+    padding: 4px 18px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d00f5;
+    border-radius: 4px;
+}
+
+/* Designing parts of cards */
+
+
+.main-container{
+    min-width: 350px;
+    margin-top: 80px;
+    gap: 2rem;
+   display: flex;
+   justify-content: center;
+   
+   flex-wrap: wrap;
+}
+.cards{
+    /* border: 2px solid black; */
+    width: 400px;
+    height: 450px;
+    box-shadow: 0 0 4px rgb(95, 101, 108);
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.cards:hover{
+    transform: translateY(-2px);
+}
+#cardImage{
+    width: 400px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 5px;
+}
+#title{
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#source{
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+#description{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
